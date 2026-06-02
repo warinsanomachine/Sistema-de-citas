@@ -1,5 +1,7 @@
 
 ## 😷 Proyecto 99x: Sistema de Agendado de citas medicas
+
+Repositorio general: https://github.com/gabrielhuav/DB-Coursework-2026-2
 Sistema web para el agendado y gestión de citas medicas en un hospital
 
 #🛠️ Tecnologías
