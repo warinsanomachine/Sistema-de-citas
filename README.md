@@ -2,15 +2,13 @@
 
 Repositorio general: https://github.com/gabrielhuav/DB-Coursework-2026-2
 
-Sistema web para el agendado y gestión de citas médicas en un entorno hospitalario. Este proyecto fue desarrollado como la "Práctica 1: Modelo Entidad-Relación"[cite: 1] para la carrera de Ingeniería en Inteligencia Artificial (Grupo 3BV1) de la ESCOM - IPN.
+Sistema web para el agendado y gestión de citas médicas en un entorno hospitalario.
 
 ## 🛠️ Tecnologías
 - **Backend:** Java, Apache Netbeans
 - **Base de Datos:** PostgreSQL
 - **Frontend:** HTML, CSS (Bootstrap 5) y JavaScript vanilla (Fetch API)
 - **Despliegue:** Save in cloud
-
-*Nota: Para levantar el entorno de desarrollo local, se recomienda inicializar la base de datos relacional de PostgreSQL mediante un contenedor de Docker y posteriormente ejecutar los scripts SQL adjuntos en las capturas.*
 
 ## 🗣️ Levantamiento de Requerimientos (Entrevista con el Cliente)
 El diseño de la base de datos se fundamentó en una entrevista previa con el cliente para comprender las necesidades operativas del hospital. Se definieron tres pilares de información clave:
