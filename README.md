@@ -2,7 +2,7 @@
 
 Repositorio general: https://github.com/gabrielhuav/DB-Coursework-2026-2
 
-[cite_start]Sistema web para el agendado y gestión de citas médicas en un entorno hospitalario[cite: 8, 9]. [cite_start]Este proyecto fue desarrollado como la "Práctica 1: Modelo Entidad-Relación" [cite: 1] [cite_start]para la carrera de Ingeniería en Inteligencia Artificial (Grupo 3BV1) de la ESCOM - IPN[cite: 3].
+Sistema web para el agendado y gestión de citas médicas en un entorno hospitalario. Este proyecto fue desarrollado como la "Práctica 1: Modelo Entidad-Relación"[cite: 1] para la carrera de Ingeniería en Inteligencia Artificial (Grupo 3BV1) de la ESCOM - IPN.
 
 ## 🛠️ Tecnologías
 - **Backend:** Java, Apache Netbeans
@@ -12,20 +12,25 @@ Repositorio general: https://github.com/gabrielhuav/DB-Coursework-2026-2
 
 *Nota: Para levantar el entorno de desarrollo local, se recomienda inicializar la base de datos relacional de PostgreSQL mediante un contenedor de Docker y posteriormente ejecutar los scripts SQL adjuntos en las capturas.*
 
-## 📢 Usuarios y Funcionalidades Principales
-[cite_start]El sistema está respaldado por un modelo relacional compuesto por 7 entidades principales[cite: 25, 26], diseñadas para cubrir los siguientes requerimientos:
+## 🗣️ Levantamiento de Requerimientos (Entrevista con el Cliente)
+El diseño de la base de datos se fundamentó en una entrevista previa con el cliente para comprender las necesidades operativas del hospital. Se definieron tres pilares de información clave:
 
-- [cite_start]**Pacientes:** Pueden agendar y consultar sus citas médicas[cite: 10, 11]. [cite_start]El sistema almacena su nombre, apellidos, email, contraseña y nivel de acceso[cite: 17, 18].
-- [cite_start]**Médicos:** Atienden a los pacientes basándose en su especialidad y horario asignado[cite: 12, 13]. [cite_start]Cuentan con una sesión personal para visualizar sus consultas y emitir la receta médica[cite: 20].
-- [cite_start]**Administrador:** Rol encargado de gestionar la plantilla de doctores, los consultorios disponibles y las especialidades del hospital[cite: 14, 15].
-- [cite_start]**Gestión de Citas:** Cada registro de cita vincula de manera relacional la situación médica, hora, fecha, consultorio, especialidad, paciente, médico y receta[cite: 19, 20].
-- [cite_start]**Mensajería Interna:** Módulo que permite la comunicación entre usuarios guardando fecha, hora, remitente, destinatario y contenido del mensaje[cite: 21, 22].
+1. **Usuarios del sistema:** El sistema debe ser capaz de almacenar de forma segura la identidad de los usuarios (nombre y apellidos), sus datos de contacto (email), credenciales de acceso (contraseña) y su nivel de acceso o privilegio en la plataforma.
+2. **Datos de cada cita:** Para la correcta gestión hospitalaria, cada cita agendada requiere relacionar la situación o motivo de la consulta, la fecha y hora programadas, el consultorio asignado, la especialidad requerida, así como la vinculación entre el paciente, el médico tratante y la receta médica generada.
+3. **Mensajería Interna:** Se requiere un módulo de comunicación que permita registrar la fecha, la hora, el usuario remitente, el usuario destinatario y el contenido del mensaje.
+
+## 📢 Usuarios y Funcionalidades Principales
+El sistema está respaldado por un modelo relacional compuesto por 7 entidades principales, diseñadas para cubrir las siguientes interacciones:
+
+- **Pacientes:** Pueden agendar y consultar sus citas médicas.
+- **Médicos:** Atienden a los pacientes basándose en su especialidad y horario asignado. Cuentan con una sesión personal para visualizar sus consultas.
+- **Administrador:** Rol encargado de gestionar la plantilla de doctores, los consultorios disponibles y las especialidades del hospital.
 
 ## 👨‍👩‍👧‍👦 Integrantes del equipo
-- [cite_start]Flores Vargas Augusto Hazel [cite: 4]
-- [cite_start]Hernández Zúñiga Andrea Verónica [cite: 5]
-- [cite_start]Linares Medina Fernando Agustin [cite: 6]
-- [cite_start]Angeles Salinas Daniel Alejandro [cite: 7]
+- Flores Vargas Augusto Hazel
+- Hernández Zúñiga Andrea Verónica
+- Linares Medina Fernando Agustin
+- Angeles Salinas Daniel Alejandro
 
 <details>
 <summary>🖼️ Capturas de la página</summary>
@@ -42,12 +47,9 @@ Repositorio general: https://github.com/gabrielhuav/DB-Coursework-2026-2
 <summary>🖼️ Capturas del proyecto (Base de Datos)</summary>
 <br>
 
-| | |
+| Modelos de la Base de Datos | Código SQL |
 |---|---|
-| <img width="1214" height="851" alt="image" src="https://github.com/user-attachments/assets/4760ff18-0f5d-414c-ae49-2f6df1392622" />
-<br>*Modelo Entidad-Relación Extendido* | |
-| <img width="1190" height="1293" alt="image" src="https://github.com/user-attachments/assets/0b64e937-01b8-4f16-be8b-e4d9c297e45f" />
-<br>*Modelo Relacional* | <img width="1065" height="798" alt="image" src="https://github.com/user-attachments/assets/0c46efe9-ed53-46b1-ab91-9c6c1b1a0faa" /><img width="1135" height="798" alt="image" src="https://github.com/user-attachments/assets/b3a5b72d-1bc2-4be0-a3df-f07b73199082" />
-<br>*Código SQL* |
+| <img width="100%" alt="Modelo Entidad Relacion Extendido" src="https://github.com/user-attachments/assets/4760ff18-0f5d-414c-ae49-2f6df1392622" /><br>*Modelo Entidad-Relación Extendido* | <img width="100%" alt="Creacion de tablas 1" src="https://github.com/user-attachments/assets/0c46efe9-ed53-46b1-ab91-9c6c1b1a0faa" /><br>*Creación de tablas (Parte 1)* |
+| <img width="100%" alt="Modelo Relacional" src="https://github.com/user-attachments/assets/0b64e937-01b8-4f16-be8b-e4d9c297e45f" /><br>*Modelo Relacional* | <img width="100%" alt="Creacion de tablas 2" src="https://github.com/user-attachments/assets/b3a5b72d-1bc2-4be0-a3df-f07b73199082" /><br>*Creación de tablas (Parte 2)* |
 
 </details>
